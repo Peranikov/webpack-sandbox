@@ -1,0 +1,6 @@
+{
+  "name": "levenshtein_distance",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT"
+}
