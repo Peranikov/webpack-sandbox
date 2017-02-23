@@ -1,2 +1,2 @@
-var cats = require('json-loader!./cats.json');
+var cats = require('./cats.json');
 console.log(cats);
