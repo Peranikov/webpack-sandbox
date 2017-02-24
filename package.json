@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --watch",
     "fixlint": "eslint --fix"
   },
   "devDependencies": {
