@@ -1,8 +1,8 @@
 import cats from "./cats.json"
 console.log(cats)
 
-const allow = () => {
-  console.log("Allow function")
+const arrow = () => {
+  console.log("Arrow function")
 }
 
-allow()
+arrow()
