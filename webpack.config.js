@@ -1,19 +1,21 @@
 module.exports = {
-  entry: './src/app.js',
+  entry: './src/Index.jsx',
   output: {
     path: "public",
     filename: 'bundle.js'
   },
+  devtool: "source-map",
+  resolve: {
+    extensions: [".jsx", ".js"]
+  },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.json$/,
         loader: "json-loader"
-      }
-    ],
-    rules: [
+      },
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
           "babel-loader",

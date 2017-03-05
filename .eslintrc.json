@@ -1,7 +1,8 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "flowtype"
+    "flowtype",
+    "react"
   ],
   "env": {
     "browser": true,
@@ -20,14 +21,11 @@
       "error",
       "unix"
     ],
-    "quotes": [
-      "error",
-      "double"
-    ],
+    "quotes": "off",
     "semi": [
-      "error",
+      "warn",
       "never"
     ],
-    "no-console": 0
+    "no-console": "warn"
   }
 }
