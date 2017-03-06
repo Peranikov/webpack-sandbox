@@ -9,6 +9,8 @@ import { Provider } from 'react-redux'
 import { render } from 'react-dom'
 import App from './components/App'
 import reducer from './reducers'
+
+import font_awesome from 'font-awesome/css/font-awesome.css'
 /*eslint-enable no-unused-vars*/
 
 const store = createStore(reducer)

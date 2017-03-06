@@ -22,6 +22,14 @@ module.exports = {
           "eslint-loader",
         ],
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(otf|eot|svg|ttf|woff|woff2)(\?.+)?$/,
+        loader: 'url-loader'
+      }
     ],
   }
 };
