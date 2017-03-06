@@ -1,10 +1,11 @@
 /*eslint-disable no-unused-vars*/
 import React, { PropTypes } from 'react'
 import Monster from './Monster'
+import CSS from '../styles/app.css'
 /*eslint-enable no-unused-vars*/
 
 const MonsterList = ({ monsters, onMonsterClick }) => (
-  <ul>
+  <ul className={CSS.monsterList}>
     {
       monsters.map(monster =>
         <Monster

@@ -1,5 +1,6 @@
 /*eslint-disable no-unused-vars*/
 import React, { PropTypes } from 'react'
+import CSS from '../styles/app.css'
 /*eslint-enable no-unused-vars*/
 
 const Monster = ({ onClick, monster }) => (
@@ -13,7 +14,7 @@ const Monster = ({ onClick, monster }) => (
         }
       })()}
     </span>
-    <span style={{ opacity: monster.joined ? 1.0 : 0.3 }}>
+    <span style={{ "margin-left": "10px", opacity: monster.joined ? 1.0 : 0.3 }}>
       {monster.name}
     </span>
   </li>
