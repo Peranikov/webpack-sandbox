@@ -5,6 +5,7 @@ import MonsterListContainer from '../containers/MonsterListContainer'
 
 const App = () => (
   <div>
+    <p>ダンジョン</p>
     <MonsterListContainer />
   </div>
 )
