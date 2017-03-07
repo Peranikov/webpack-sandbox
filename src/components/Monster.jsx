@@ -14,8 +14,9 @@ const Monster = ({ onClick, monster }) => (
         }
       })()}
     </span>
-    <span style={{ "margin-left": "10px", opacity: monster.joined ? 1.0 : 0.3 }}>
-      {monster.name}
+    <span style={{ "marginLeft": "10px", opacity: monster.joined ? 1.0 : 0.3 }}>
+      <span>{monster.atack}</span>
+      <span style={{ "marginLeft": "10px" }}>{monster.name}</span>
     </span>
   </li>
 )

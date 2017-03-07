@@ -1,8 +1,9 @@
+import Monster from "../models/Monster"
+
 const initialState = [
-  // TODO: classed
-  { id: 1, name: "ゴブリン", joined: true},
-  { id: 2, name: "オーク", joined: true},
-  { id: 3, name: "ドラゴン", joined: true},
+  new Monster({ id: 1, name: "ゴブリン", atack: 1, joined: true}),
+  new Monster({ id: 2, name: "オーク", atack: 3, joined: true}),
+  new Monster({ id: 3, name: "ドラゴン", atack: 9, joined: true}),
 ]
 
 const monster = (state, action) => {
