@@ -16,6 +16,7 @@ const monster = (state, action) => {
     return {
       id: state.id,
       name: state.name,
+      atack: state.atack,
       joined: !state.joined
     }
   default:

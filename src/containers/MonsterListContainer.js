@@ -10,9 +10,9 @@ const mapDispatchToProps = {
   onMonsterClick: toggleMonster
 }
 
-const VisibleMonsterList = connect(
+const MonsterListContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(MonsterList)
 
-export default VisibleMonsterList
+export default MonsterListContainer

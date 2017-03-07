@@ -1,12 +1,12 @@
 /*eslint-disable no-unused-vars*/
 import React from 'react'
-import VisibleMonsterList from '../containers/VisibleMonsterList'
+import MonsterListContainer from '../containers/MonsterListContainer'
 /*eslint-enable no-unused-vars*/
 
 const App = () => {
   return(
     <div>
-      <VisibleMonsterList />
+      <MonsterListContainer />
     </div>
   )
 }
