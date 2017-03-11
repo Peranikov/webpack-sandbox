@@ -8,7 +8,7 @@ const initialState = [
 
 const monster = (state, action) => {
   switch (action.type) {
-  case "TOGGLE_MONSTER":
+  case "TOGGLE_JOIN_MONSTER":
     if (state.id !== action.id) {
       return state
     }
@@ -27,7 +27,7 @@ const monster = (state, action) => {
 
 const monsters = (state = initialState, action) => {
   switch (action.type) {
-  case "TOGGLE_MONSTER":
+  case "TOGGLE_JOIN_MONSTER":
     return state.map(t =>
         monster(t, action)
       )
