@@ -6,8 +6,9 @@ import HitPointBarContainer from '../containers/HitPointBarContainer'
 
 const App = () => (
   <div>
+    <h1>Dungeon of Mandom Simulator</h1>
     <div>
-      <p>ダンジョン</p>
+      <p>Monsters</p>
       <MonsterListContainer />
     </div>
     <div>
