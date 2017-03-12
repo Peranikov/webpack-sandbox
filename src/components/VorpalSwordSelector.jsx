@@ -2,13 +2,14 @@
 import React, { PropTypes } from 'react'
 import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
+import Subheader from 'material-ui/Subheader'
 import CSS from '../styles/app.css'
 /*eslint-enable no-unused-vars*/
 
 const VorpalSwordSelector = ({ monsters, onChange }) => (
   <div>
+    <Subheader>VorpalSword Target</Subheader>
     <SelectField
-      floatingLabelText="VorpalSword Target"
       onChange={onChange}
     >
       {
