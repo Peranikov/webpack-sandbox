@@ -19,7 +19,6 @@ const App = () => (
       title="Dungeon of Mandom Simulator"
       showMenuIconButton={ false }
     />
-    <p>Hit Point</p>
     <HitPointBarContainer />
     <div style={styles.root}>
       <MonsterListContainer />

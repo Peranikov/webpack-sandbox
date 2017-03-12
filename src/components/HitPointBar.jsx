@@ -1,5 +1,6 @@
 /*eslint-disable no-unused-vars*/
 import React, { PropTypes } from 'react'
+import Subheader from 'material-ui/Subheader'
 import CSS from '../styles/app.css'
 /*eslint-enable no-unused-vars*/
 
@@ -15,6 +16,7 @@ const HitPointBar = ({ hitPoint, sumAtack }) => {
 
   return(
     <div>
+      <Subheader>Hit Point</Subheader>
       <span style={{ padding: 10 }}>
         {hitPoint}
       </span>
