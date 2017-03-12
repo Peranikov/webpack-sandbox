@@ -2,6 +2,7 @@ import Item from "../models/Item"
 
 const initialState = [
   new Item({ id: 1, name: "ナイトシールド", equipment: true, defense: 3 }),
+  new Item({ id: 2, name: "プレートメイル", equipment: true, defense: 5 })
 ]
 
 const item = (item, action) => {
