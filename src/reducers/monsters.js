@@ -6,22 +6,17 @@ const initialState = [
   new Monster({ id: 3, name: "ドラゴン", atack: 9, joined: true}),
 ]
 
-const monster = (state, action) => {
+const monster = (monster, action) => {
   switch (action.type) {
   case "TOGGLE_JOIN_MONSTER":
-    if (state.id !== action.id) {
-      return state
+    if (monster.id !== action.id) {
+      return monster
     }
 
-    return new Monster({
-      id: state.id,
-      name: state.name,
-      atack: state.atack,
-      joined: !state.joined
-    })
+    return monster.toggleJoined()
     
   default:
-    return state
+    return monster
   }
 }
 
