@@ -1,11 +1,3 @@
-:local .monsterList {
-  list-style-type: none
-}
-
-:local .itemList {
-  list-style-type: none
-}
-
 :local .hitPointPlus {
   color: #ADFF2F
 }
