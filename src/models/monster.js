@@ -4,12 +4,13 @@ const MonsterRecord = Record({
   id: null,
   name: "",
   atack: 0,
-  joined: true
+  joined: true,
+  type: ""
 })
 
 export default class Monster extends MonsterRecord {
-  getName() {
-    return this.getName("name")
+  isTypeDragon() {
+    return this.type === "dragon"
   }
 
   toggleJoined() {
@@ -17,6 +18,7 @@ export default class Monster extends MonsterRecord {
       id: this.id,
       name: this.name,
       atack: this.atack,
+      type: this.type,
       joined: !this.joined
     })
   }

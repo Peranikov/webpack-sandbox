@@ -22,7 +22,7 @@ const initialState = [
     id: 4,
     name: "ドラゴンランス",
     antiMonsterCondition: (monster) => (
-      monster.name === "ドラゴン"
+      monster.isTypeDragon()
     )
   })
 ]
