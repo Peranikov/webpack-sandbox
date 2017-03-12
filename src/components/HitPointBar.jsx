@@ -16,7 +16,7 @@ const HitPointBar = ({ hitPoint, sumAtack }) => {
 
   return(
     <div>
-      <Subheader>Hit Point</Subheader>
+      <Subheader>Hit Point - Monster's Atack</Subheader>
       <span style={{ padding: 10 }}>
         {hitPoint}
       </span>
