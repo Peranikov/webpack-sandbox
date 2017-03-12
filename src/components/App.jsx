@@ -1,6 +1,7 @@
 /*eslint-disable no-unused-vars*/
 import React from 'react'
 import MonsterListContainer from '../containers/MonsterListContainer'
+import ItemListContainer from '../containers/ItemListContainer'
 import HitPointBarContainer from '../containers/HitPointBarContainer'
 /*eslint-enable no-unused-vars*/
 
@@ -10,6 +11,10 @@ const App = () => (
     <div>
       <p>Monsters</p>
       <MonsterListContainer />
+    </div>
+    <div>
+      <p>Items</p>
+      <ItemListContainer />
     </div>
     <div>
       <HitPointBarContainer />

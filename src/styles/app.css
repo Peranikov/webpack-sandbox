@@ -1,3 +1,7 @@
 :local .monsterList {
   list-style-type: none
 }
+
+:local .itemList {
+  list-style-type: none
+}
