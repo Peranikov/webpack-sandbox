@@ -5,7 +5,8 @@ const ItemRecord = Record({
   name: "",
   equipment: true,
   defense: 0,
-  antiMonsterCondition: () => false
+  antiMonsterCondition: () => false,
+  description: ""
 })
 
 export default class Item extends ItemRecord {
@@ -15,7 +16,8 @@ export default class Item extends ItemRecord {
       name: this.name,
       defense: this.defense,
       antiMonsterCondition: fn,
-      equipment: this.equipment
+      equipment: this.equipment,
+      description: this.description
     })
   }
 
@@ -25,7 +27,8 @@ export default class Item extends ItemRecord {
       name: this.name,
       defense: this.defense,
       antiMonsterCondition: this.antiMonsterCondition,
-      equipment: !this.equipment
+      equipment: !this.equipment,
+      description: this.description
     })
   }
 }

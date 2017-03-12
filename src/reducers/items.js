@@ -6,35 +6,41 @@ const initialState = [
     name: "たいまつ",
     antiMonsterCondition: (monster) => (
       monster.atack <= 3
-    )
+    ),
+    description: "攻撃力が3以下のモンスターを無効化"
   }),
   new Item({
     id: 2,
     name: "聖杯",
     antiMonsterCondition: (monster) => (
       monster.isTypeUndead()
-    )
+    ),
+    description: "アンデッドのモンスターを無効化"
   }),
   new Item({
     id: 3,
     name: "ナイトシールド",
-    defense: 3
+    defense: 3,
+    description: "HP +3"
   }),
   new Item({
     id: 4,
     name: "プレートメイル",
-    defense: 5
+    defense: 5,
+    description: "HP +5"
   }),
   new Item({
     id: 5,
     name: "ドラゴンランス",
     antiMonsterCondition: (monster) => (
       monster.isTypeDragon()
-    )
+    ),
+    description: "ドラゴンを無効化"
   }),
   new Item({
     id: 6,
-    name: "ヴォーパルソード"
+    name: "ヴォーパルソード",
+    description: "指定した１種類のモンスターを無効化"
   })
 ]
 

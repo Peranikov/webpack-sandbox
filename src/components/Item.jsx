@@ -9,7 +9,7 @@ const Item = ({ onClick, item }) => (
   <ListItem
     leftCheckbox={<Checkbox checked={item.equipment} onClick={onClick} />}
     primaryText={item.name}
-    secondaryText={"defense: " + item.defense}
+    secondaryText={item.description}
   />
 )
 
