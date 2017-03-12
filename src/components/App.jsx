@@ -1,5 +1,6 @@
 /*eslint-disable no-unused-vars*/
 import React from 'react'
+import AppBar from 'material-ui/AppBar'
 import MonsterListContainer from '../containers/MonsterListContainer'
 import ItemListContainer from '../containers/ItemListContainer'
 import HitPointBarContainer from '../containers/HitPointBarContainer'
@@ -8,7 +9,10 @@ import VorpalSwordContainer from '../containers/VorpalSwordContainer'
 
 const App = () => (
   <div>
-    <h1>Dungeon of Mandom Simulator</h1>
+    <AppBar
+      title="Dungeon of Mandom Simulator"
+      showMenuIconButton={ false }
+    />
     <div>
       <p>Monsters</p>
       <MonsterListContainer />
