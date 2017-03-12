@@ -1,11 +1,14 @@
 /*eslint-disable no-unused-vars*/
 import React, { PropTypes } from 'react'
 import Monster from './Monster'
+import {List} from 'material-ui/List'
+import Subheader from 'material-ui/Subheader'
 import CSS from '../styles/app.css'
 /*eslint-enable no-unused-vars*/
 
 const MonsterList = ({ monsters, onMonsterClick }) => (
-  <ul className={CSS.monsterList}>
+  <List>
+    <Subheader>Monsters</Subheader>
     {
       monsters.map(monster =>
         <Monster
@@ -15,7 +18,7 @@ const MonsterList = ({ monsters, onMonsterClick }) => (
         />
       )
     }
-  </ul>
+  </List>
 )
 
 MonsterList.propTypes = {

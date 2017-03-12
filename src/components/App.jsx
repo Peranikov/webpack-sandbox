@@ -4,8 +4,14 @@ import AppBar from 'material-ui/AppBar'
 import MonsterListContainer from '../containers/MonsterListContainer'
 import ItemListContainer from '../containers/ItemListContainer'
 import HitPointBarContainer from '../containers/HitPointBarContainer'
-import VorpalSwordContainer from '../containers/VorpalSwordContainer'
 /*eslint-enable no-unused-vars*/
+
+const styles = {
+  root: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+}
 
 const App = () => (
   <div>
@@ -13,21 +19,11 @@ const App = () => (
       title="Dungeon of Mandom Simulator"
       showMenuIconButton={ false }
     />
-    <div>
-      <p>Monsters</p>
+    <p>Hit Point</p>
+    <HitPointBarContainer />
+    <div style={styles.root}>
       <MonsterListContainer />
-    </div>
-    <div>
-      <p>Items</p>
       <ItemListContainer />
-    </div>
-    <div>
-      <p>Vopal Sword Target</p>
-      <VorpalSwordContainer />
-    </div>
-    <div>
-      <p>Hit Point</p>
-      <HitPointBarContainer />
     </div>
   </div>
 )
