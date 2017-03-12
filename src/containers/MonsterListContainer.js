@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { toggleMonster } from '../actions'
+import { toggleJoinMonster } from '../actions'
 import MonsterList from '../components/MonsterList'
 
 const mapStateToProps = (state) => {
@@ -7,7 +7,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = {
-  onMonsterClick: toggleMonster
+  onMonsterClick: toggleJoinMonster
 }
 
 const MonsterListContainer = connect(
