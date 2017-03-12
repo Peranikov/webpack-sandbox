@@ -4,8 +4,7 @@ const MonsterRecord = Record({
   id: null,
   name: "",
   atack: 0,
-  joined: true,
-  antiItems: []
+  joined: true
 })
 
 export default class Monster extends MonsterRecord {

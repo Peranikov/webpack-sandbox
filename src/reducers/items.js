@@ -4,7 +4,6 @@ const initialState = [
   new Item({
     id: 1,
     name: "たいまつ",
-    defense: 0,
     antiMonsterCondition: (monster) => (
       monster.atack <= 3
     )
@@ -18,6 +17,13 @@ const initialState = [
     id: 3,
     name: "プレートメイル",
     defense: 5
+  }),
+  new Item({
+    id: 4,
+    name: "ドラゴンランス",
+    antiMonsterCondition: (monster) => (
+      monster.name === "ドラゴン"
+    )
   })
 ]
 
