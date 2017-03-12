@@ -19,10 +19,7 @@ export default class Monster extends MonsterRecord {
 
   toggleJoined() {
     return new Monster({
-      id: this.id,
-      name: this.name,
-      atack: this.atack,
-      type: this.type,
+      ...this.toObject(),
       joined: !this.joined
     })
   }

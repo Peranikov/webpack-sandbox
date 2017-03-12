@@ -12,23 +12,15 @@ const ItemRecord = Record({
 export default class Item extends ItemRecord {
   setAntiMonsterCondition(fn) {
     return new Item({
-      id: this.id,
-      name: this.name,
-      defense: this.defense,
-      antiMonsterCondition: fn,
-      equipment: this.equipment,
-      description: this.description
+      ...this.toObject(),
+      antiMonsterCondition: fn
     })
   }
 
   toggleEquipment() {
     return new Item({
-      id: this.id,
-      name: this.name,
-      defense: this.defense,
-      antiMonsterCondition: this.antiMonsterCondition,
-      equipment: !this.equipment,
-      description: this.description
+      ...this.toObject(),
+      equipment: !this.equipment
     })
   }
 }
