@@ -10,16 +10,23 @@ const initialState = [
   }),
   new Item({
     id: 2,
+    name: "聖杯",
+    antiMonsterCondition: (monster) => (
+      monster.isTypeUndead()
+    )
+  }),
+  new Item({
+    id: 3,
     name: "ナイトシールド",
     defense: 3
   }),
   new Item({
-    id: 3,
+    id: 4,
     name: "プレートメイル",
     defense: 5
   }),
   new Item({
-    id: 4,
+    id: 5,
     name: "ドラゴンランス",
     antiMonsterCondition: (monster) => (
       monster.isTypeDragon()

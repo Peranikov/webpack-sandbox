@@ -3,7 +3,8 @@ import Monster from "../models/Monster"
 const initialState = [
   new Monster({ id: 1, name: "ゴブリン", atack: 1}),
   new Monster({ id: 2, name: "オーク", atack: 3}),
-  new Monster({ id: 3, name: "ドラゴン", atack: 9, type: "dragon"}),
+  new Monster({ id: 3, name: "バンパイア", atack: 4, type: "undead"}),
+  new Monster({ id: 13, name: "ドラゴン", atack: 9, type: "dragon"}),
 ]
 
 const monster = (monster, action) => {

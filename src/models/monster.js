@@ -13,6 +13,10 @@ export default class Monster extends MonsterRecord {
     return this.type === "dragon"
   }
 
+  isTypeUndead() {
+    return this.type === "undead"
+  }
+
   toggleJoined() {
     return new Monster({
       id: this.id,
