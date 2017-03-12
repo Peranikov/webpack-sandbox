@@ -15,7 +15,6 @@ const HitPointBar = ({ hitPoint, sumAtack }) => {
 
   return(
     <div>
-      HP:
       <span style={{ padding: 10 }}>
         {hitPoint}
       </span>

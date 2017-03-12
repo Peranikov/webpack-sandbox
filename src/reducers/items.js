@@ -31,6 +31,10 @@ const initialState = [
     antiMonsterCondition: (monster) => (
       monster.isTypeDragon()
     )
+  }),
+  new Item({
+    id: 6,
+    name: "ヴォーパルソード"
   })
 ]
 
@@ -42,7 +46,14 @@ const item = (item, action) => {
     }
 
     return item.toggleEquipment()
-    
+  case "CHANGE_VORPAL_SWORD_TARGET":
+    if (item.name !== "ヴォーパルソード") {
+      return item
+    }
+
+    return item.setAntiMonsterCondition((monster) => (
+      monster.name === action.monsterName
+    ))
   default:
     return item
   }
@@ -51,6 +62,8 @@ const item = (item, action) => {
 const items = (state = initialState, action) => {
   switch (action.type) {
   case "TOGGLE_EQUIPMENT":
+    return state.map(i => item(i, action))
+  case "CHANGE_VORPAL_SWORD_TARGET":
     return state.map(i => item(i, action))
   default:
     return state

@@ -3,6 +3,7 @@ import React from 'react'
 import MonsterListContainer from '../containers/MonsterListContainer'
 import ItemListContainer from '../containers/ItemListContainer'
 import HitPointBarContainer from '../containers/HitPointBarContainer'
+import VorpalSwordContainer from '../containers/VorpalSwordContainer'
 /*eslint-enable no-unused-vars*/
 
 const App = () => (
@@ -17,6 +18,11 @@ const App = () => (
       <ItemListContainer />
     </div>
     <div>
+      <p>Vopal Sword Target</p>
+      <VorpalSwordContainer />
+    </div>
+    <div>
+      <p>Hit Point</p>
       <HitPointBarContainer />
     </div>
   </div>

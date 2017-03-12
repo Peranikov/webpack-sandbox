@@ -9,8 +9,14 @@ const ItemRecord = Record({
 })
 
 export default class Item extends ItemRecord {
-  getName() {
-    return this.getName("name")
+  setAntiMonsterCondition(fn) {
+    return new Item({
+      id: this.id,
+      name: this.name,
+      defense: this.defense,
+      antiMonsterCondition: fn,
+      equipment: this.equipment
+    })
   }
 
   toggleEquipment() {
