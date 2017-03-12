@@ -1,8 +1,24 @@
 import Item from "../models/Item"
 
 const initialState = [
-  new Item({ id: 1, name: "ナイトシールド", equipment: true, defense: 3 }),
-  new Item({ id: 2, name: "プレートメイル", equipment: true, defense: 5 })
+  new Item({
+    id: 1,
+    name: "たいまつ",
+    defense: 0,
+    antiMonsterCondition: (monster) => (
+      monster.atack <= 3
+    )
+  }),
+  new Item({
+    id: 2,
+    name: "ナイトシールド",
+    defense: 3
+  }),
+  new Item({
+    id: 3,
+    name: "プレートメイル",
+    defense: 5
+  })
 ]
 
 const item = (item, action) => {
