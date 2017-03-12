@@ -7,9 +7,7 @@ import CSS from '../styles/app.css'
 const Monster = ({ onClick, monster }) => {
   return (
     <li>
-      <span>
-        <Checkbox checked={monster.joined} onClick={onClick} label={monster.name + " : " + monster.atack} />
-      </span>
+      <Checkbox checked={monster.joined} onClick={onClick} label={monster.name + " : " + monster.atack} />
     </li>
   )
 }
