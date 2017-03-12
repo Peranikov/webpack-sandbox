@@ -7,7 +7,7 @@ import CSS from '../styles/app.css'
 /*eslint-enable no-unused-vars*/
 
 const MonsterList = ({ monsters, onMonsterClick }) => (
-  <List>
+  <List style={{ marginRight: 50 }}>
     <Subheader>Monsters</Subheader>
     {
       monsters.map(monster =>
