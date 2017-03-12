@@ -5,12 +5,21 @@ function calcSumAtack(monsters) {
   return monsters
     .filter((m) => (m.joined))
     .map((m) => (m.atack))
-    .reduce((sum, a) => (sum + a ), 0)
+    .reduce((sum, a) => (sum + a), 0)
+}
+
+function calcSumDefense(items) {
+  const yourDefaultHitPoint = 3
+
+  return items
+    .filter((i) => (i.equipment))
+    .map((i) => (i.defense))
+    .reduce((sum, i) => (sum + i), yourDefaultHitPoint)
 }
 
 const mapStateToProps = (state) => {
   return {
-    hitPoint: 13,
+    hitPoint: calcSumDefense(state.items),
     sumAtack: calcSumAtack(state.monsters)
   }
 }
