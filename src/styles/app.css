@@ -5,3 +5,11 @@
 :local .itemList {
   list-style-type: none
 }
+
+:local .hitPointPlus {
+  color: #ADFF2F
+}
+
+:local .hitPointMinus {
+  color: #DB7093
+}
