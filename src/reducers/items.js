@@ -12,12 +12,7 @@ const item = (item, action) => {
       return item
     }
 
-    return new Item({
-      id: item.id,
-      name: item.name,
-      defense: item.defense,
-      equipment: !item.equipment
-    })
+    return item.toggleEquipment()
     
   default:
     return item
