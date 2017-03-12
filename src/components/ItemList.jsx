@@ -21,7 +21,6 @@ const ItemList = ({ items, onEquipmentClick }) => (
         )
       }
     </List>
-    <p>Vopal Sword Target</p>
     <VorpalSwordContainer />
   </div>
 )
