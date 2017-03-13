@@ -8,7 +8,7 @@ export const toggleEquipment = (id) => ({
   id
 })
 
-export const changeVorpalSwordTarget = (event, index, value) => ({
+export const changeVorpalSwordTarget = (name) => ({
   type: 'CHANGE_VORPAL_SWORD_TARGET',
-  monsterName: value
+  monsterName: name
 })

@@ -10,7 +10,7 @@ const VorpalSwordSelector = ({ monsters, onChange }) => (
   <div>
     <Subheader>VorpalSword Target</Subheader>
     <SelectField
-      onChange={onChange}
+      onChange={(event, index, value) => onChange(value)}
     >
       {
         monsters
