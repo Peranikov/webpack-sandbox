@@ -6,10 +6,11 @@ import Subheader from 'material-ui/Subheader'
 import CSS from '../styles/app.css'
 /*eslint-enable no-unused-vars*/
 
-const VorpalSwordSelector = ({ monsters, onChange }) => (
+const VorpalSwordSelector = ({ monsters, vorpalSwordTarget, onChange }) => (
   <div>
     <Subheader>VorpalSword Target</Subheader>
     <SelectField
+      value={vorpalSwordTarget}
       onChange={(event, index, value) => onChange(value)}
     >
       {
