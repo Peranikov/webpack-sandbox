@@ -11,3 +11,11 @@ $ yarn
 ```
 $ npm start # and access to localhost:3000
 ```
+
+## Deploy
+
+deploy to github pages
+
+```
+$ npm run deploy
+```
