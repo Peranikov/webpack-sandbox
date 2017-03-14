@@ -10,7 +10,7 @@
     "watch": "webpack --watch",
     "fixlint": "eslint --fix",
     "test": "jest",
-    "test-watch": "jest --watch",
+    "test:watch": "npm test -- --watch",
     "flow": "flow",
     "flow-typed": "flow-typed install"
   },
