@@ -1,14 +1,16 @@
+import * as types from './actionTypes'
+
 export const toggleJoinMonster = (id) => ({
-  type: 'TOGGLE_JOIN_MONSTER',
+  type: types.TOGGLE_JOIN_MONSTER,
   id
 })
 
 export const toggleEquipment = (id) => ({
-  type: 'TOGGLE_EQUIPMENT',
+  type: types.TOGGLE_EQUIPMENT,
   id
 })
 
 export const changeVorpalSwordTarget = (name) => ({
-  type: 'CHANGE_VORPAL_SWORD_TARGET',
+  type: types.CHANGE_VORPAL_SWORD_TARGET,
   monsterName: name
 })

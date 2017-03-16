@@ -1,11 +1,12 @@
 import * as actions from '../../src/actions/index'
+import * as types from '../../src/actions/actionTypes'
 import assert from 'power-assert'
 
 describe('actions', () => {
   it('#toggleJoinMonster', () => {
     const id = 1
     const expectedAction = {
-      type: "TOGGLE_JOIN_MONSTER",
+      type: types.TOGGLE_JOIN_MONSTER,
       id
     }
 
@@ -15,7 +16,7 @@ describe('actions', () => {
   it('#toggleEquipment', () => {
     const id = 1
     const expectedAction = {
-      type: "TOGGLE_EQUIPMENT",
+      type: types.TOGGLE_EQUIPMENT,
       id
     }
 
@@ -25,7 +26,7 @@ describe('actions', () => {
   it('#changeVorpalSwordTarget', () => {
     const name = "(´・ω・｀)"
     const expectedAction = {
-      type: "CHANGE_VORPAL_SWORD_TARGET",
+      type: types.CHANGE_VORPAL_SWORD_TARGET,
       monsterName: name
     }
     assert.deepStrictEqual(actions.changeVorpalSwordTarget(name), expectedAction)
