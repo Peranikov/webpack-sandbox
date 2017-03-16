@@ -1,3 +1,4 @@
+import { TOGGLE_JOIN_MONSTER } from '../actions/actionTypes'
 import Monster from "../models/Monster"
 
 const initialState = [
@@ -18,7 +19,7 @@ const initialState = [
 
 const monster = (monster, action) => {
   switch (action.type) {
-  case "TOGGLE_JOIN_MONSTER":
+  case TOGGLE_JOIN_MONSTER:
     if (monster.id !== action.id) {
       return monster
     }
@@ -32,7 +33,7 @@ const monster = (monster, action) => {
 
 const monsters = (state = initialState, action) => {
   switch (action.type) {
-  case "TOGGLE_JOIN_MONSTER":
+  case TOGGLE_JOIN_MONSTER:
     return state.map(t =>
         monster(t, action)
       )

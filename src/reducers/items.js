@@ -1,3 +1,4 @@
+import { TOGGLE_EQUIPMENT, CHANGE_VORPAL_SWORD_TARGET } from '../actions/actionTypes'
 import Item from "../models/Item"
 
 const initialState = [
@@ -67,9 +68,9 @@ const item = (item, action) => {
 
 const items = (state = initialState, action) => {
   switch (action.type) {
-  case "TOGGLE_EQUIPMENT":
+  case TOGGLE_EQUIPMENT:
     return state.map(i => item(i, action))
-  case "CHANGE_VORPAL_SWORD_TARGET":
+  case CHANGE_VORPAL_SWORD_TARGET:
     return state.map(i => item(i, action))
   default:
     return state
