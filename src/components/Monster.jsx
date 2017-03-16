@@ -2,7 +2,6 @@
 import React, { PropTypes } from 'react'
 import Checkbox from 'material-ui/Checkbox'
 import {ListItem} from 'material-ui/List'
-import CSS from '../styles/app.css'
 /*eslint-enable no-unused-vars*/
 
 const Monster = ({ onClick, monster }) => {
